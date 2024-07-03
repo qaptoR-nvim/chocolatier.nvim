@@ -1046,6 +1046,7 @@ local function get_groups()
     DiffviewStatusModified = { link = "FrontiersGreenBold" },
     DiffviewFilePanelInsertions = { link = "FrontiersGreenBold" },
     DiffviewFilePanelDeletions = { link = "FrontiersRedBold" },
+    TermCursorNC = { link = "WinBar" },
     ["@comment"] = { link = "Comment" },
     ["@none"] = { bg = "NONE", fg = "NONE" },
     ["@preproc"] = { link = "PreProc" },
