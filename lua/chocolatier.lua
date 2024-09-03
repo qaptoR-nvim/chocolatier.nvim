@@ -183,6 +183,7 @@ Chocolatier.palette = {
   alt_a = "#251d18",
   alt_b = "#30211c",
   alt_h = "#221a0f",
+  alt_r = "#1E170D",
   alt_s = "#372a16",
 }
 
@@ -344,6 +345,11 @@ local function get_groups()
     ChocolatierFg3 = { fg = colors.fg3 },
     ChocolatierFg4 = { fg = colors.fg4 },
     ChocolatierAltG = { fg = colors.alt_g },
+    ChocolatierAltH = { fg = colors.alt_h },
+    ChocolatierAltA = { fg = colors.alt_a },
+    ChocolatierAltB = { fg = colors.alt_b },
+    ChocolatierAltR = { fg = colors.alt_r },
+    ChocolatierAltS = { fg = colors.alt_s },
     ChocolatierBg0 = { fg = colors.bg0 },
     ChocolatierBg1 = { fg = colors.bg1 },
     ChocolatierBg2 = { fg = colors.bg2 },
@@ -1199,6 +1205,14 @@ local function get_groups()
     ["@lsp.type.type"] = { link = "@type" },
     ["@lsp.type.typeParameter"] = { link = "@type.definition" },
     ["@lsp.type.variable"] = { link = "@variable" },
+    ["@org.headline.level1"] = { link = "FrontiersGreen" },
+    ["@org.headline.level2"] = { link = "FrontiersPurple" },
+    ["@org.headline.level3"] = { link = "FrontiersFuscia" },
+    ["@org.headline.level4"] = { link = "FrontiersBlue" },
+    ["@org.headline.level5"] = { link = "FrontiersAqua" },
+    ["@org.headline.level6"] = { link = "FrontiersRed" },
+    ["@org.headline.level7"] = { link = "FrontiersOrange" },
+    ["@org.headline.level8"] = { link = "FrontiersYellow" },
   }
 
   for group, hl in pairs(config.overrides) do
