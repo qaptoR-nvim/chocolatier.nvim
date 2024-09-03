@@ -15,11 +15,12 @@ A espresso/kimbie inspired chocolatey theme written in lua with treesitter and s
 
 Adapted from ~ellisonleao/gruvbox.nvim~ theme.
 
-#insert screenshots here
+# insert screenshots here
 
 * Prerequisites
 
 Neovim 0.8.0+ (according to original gruvbox.nvim)
+
 Recommend using Neovim 0.10.0+ (actually tested/used)
 
 * Installing
@@ -143,4 +144,4 @@ highlight group map, such as:
 - *italic* - true or false for italic font
 
 Other values can be seen in
-[[https://neovim.io/doc/user/builtin.html#synIDattr()][`synIDattr`]]
+[[https://neovim.io/doc/user/builtin.html#synIDattr()][~synIDattr~]]
