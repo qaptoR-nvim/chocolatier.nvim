@@ -1,0 +1,146 @@
+#+begin_comment
+<div align="center">
+  <h1>
+    <img src="https://i.postimg.cc/WpQzgxVh/plugin-Icon.png" width="80px"><br/>
+    gruvbox.nvim
+  </h1>
+</div>
+<p align="center"> 
+  #insert social media badges here
+  <a href="#"><img alt="Made with Lua" src="https://img.shields.io/badge/Made%20with%20Lua-blueviolet.svg?style=for-the-badge&logo=lua" style="vertical-align:center" /></a>
+</p>
+#+end_comment
+
+A espresso/kimbie inspired chocolatey theme written in lua with treesitter and semantic highlights support!
+
+Adapted from ~ellisonleao/gruvbox.nvim~ theme.
+
+#insert screenshots here
+
+* Prerequisites
+
+Neovim 0.8.0+ (according to original gruvbox.nvim)
+Recommend using Neovim 0.10.0+ (actually tested/used)
+
+* Installing
+
+** Using ~packer~
+
+#+begin_src lua
+use { "qaptoR-nvim/chocolatier.nvim" }
+#+end_src
+
+** Using ~lazy.nvim~
+
+#+begin_src lua
+{ "qaptoR-nvim/chocolatier.nvim", priority = 1000 , config = true, opts = ...}
+#+end_src
+
+** Using ~vim-plug~
+
+#+begin_src vim
+Plug 'qaptoR-nvim/chocolatier.nvim'
+#+end_src
+
+* Basic Usage
+
+Inside ~init.vim~
+
+#+begin_src vim
+set background=dark " or light if you want light mode
+colorscheme chocolatier
+#+end_src
+
+Inside ~init.lua~
+
+#+begin_src lua
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme chocolatier]])
+#+end_src
+
+* Configuration
+
+Additional settings for chocolatier are:
+
+#+begin_src lua
+-- Default options:
+require("chocolatier").setup({
+  terminal_colors = true, -- add neovim terminal colors
+  undercurl = true,
+  underline = true,
+  bold = true,
+  italic = {
+    strings = true,
+    emphasis = true,
+    comments = true,
+    operators = false,
+    folds = true,
+  },
+  strikethrough = true,
+  invert_selection = false,
+  invert_signs = false,
+  invert_tabline = false,
+  invert_intend_guides = false,
+  inverse = true, -- invert background for search, diffs, statuslines and errors
+  contrast = "", -- can be "hard", "soft" or empty string
+  palette_overrides = {},
+  overrides = {},
+  dim_inactive = false,
+  transparent_mode = false,
+})
+vim.cmd("colorscheme chocolatier")
+#+end_src
+
+**VERY IMPORTANT**: Make sure to call setup() **BEFORE** calling the colorscheme command, to use your custom configs
+
+** Overriding
+
+*** Palette
+
+You can specify your own palette colors. For example:
+
+#+begin_src lua
+require("chocolatier").setup({
+    palette_overrides = {
+        bright_green = "#990000",
+    }
+})
+vim.cmd("colorscheme chocolatier")
+#+end_src
+
+*** Highlight groups
+
+If you don't enjoy the current color for a specific highlight group,
+now you can just override it in the setup. For example:
+
+#+begin_src lua
+require("chocolatier").setup({
+    overrides = {
+        SignColumn = {bg = "#ff9900"}
+    }
+})
+vim.cmd("colorscheme chocolatier")
+#+end_src
+
+It also works with treesitter groups and lsp semantic highlight tokens
+
+#+begin_src lua
+require("chocolatier").setup({
+    overrides = {
+        ["@lsp.type.method"] = { bg = "#ff9900" },
+        ["@comment.lua"] = { bg = "#000000" },
+    }
+})
+vim.cmd("colorscheme chocolatier")
+#+end_src
+
+Please note that the override values must follow the attributes from the
+highlight group map, such as:
+
+- *fg*     - foreground color
+- *bg*     - background color
+- *bold*   - true or false for bold font
+- *italic* - true or false for italic font
+
+Other values can be seen in
+[[https://neovim.io/doc/user/builtin.html#synIDattr()][`synIDattr`]]

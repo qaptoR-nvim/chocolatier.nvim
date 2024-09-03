@@ -1,85 +1,80 @@
-*gruvbox.nvim.txt*        For Neovim >= 0.8.0        Last change: 2024 June 05
+*chocolatier.txt*        For Neovim >= 0.8.0        Last change: 2024 June 05
 
 ==============================================================================
-Table of Contents                             *gruvbox.nvim-table-of-contents*
+Table of Contents                             *chocolatier-table-of-contents*
 
-1. Prerequisites                                  |gruvbox.nvim-prerequisites|
-2. Installing                                        |gruvbox.nvim-installing|
-  - Using packer                        |gruvbox.nvim-installing-using-packer|
-  - Using lazy.nvim                  |gruvbox.nvim-installing-using-lazy.nvim|
-  - Using vim-plug                    |gruvbox.nvim-installing-using-vim-plug|
-3. Basic Usage                                      |gruvbox.nvim-basic-usage|
-4. Configuration                                  |gruvbox.nvim-configuration|
-  - Overriding                         |gruvbox.nvim-configuration-overriding|
->
-      <h1> <img src="https://i.postimg.cc/WpQzgxVh/plugin-Icon.png" width="80px"><br/>gruvbox.nvim</h1>
-     </div>
-<
+1. Prerequisites                                  |chocolatier-prerequisites|
+2. Installing                                        |chocolatier-installing|
+  - Using packer                        |chocolatier-installing-using-packer|
+  - Using lazy.nvim                  |chocolatier-installing-using-lazy.nvim|
+  - Using vim-plug                    |chocolatier-installing-using-vim-plug|
+3. Basic Usage                                      |chocolatier-basic-usage|
+4. Configuration                                  |chocolatier-configuration|
+  - Overriding                         |chocolatier-configuration-overriding|
 
 
-A port of gruvbox community <https://github.com/gruvbox-community/gruvbox>
-theme to lua with treesitter
-<https://github.com/nvim-treesitter/nvim-treesitter> and |semantic highlights|
-support!
+A espresso/kimbie inspired chocolatey theme written in lua with treesitter
+and semantic highlights support!
 
+Adapted from `ellisonleao/gruvbox.nvim` theme.
 
 ==============================================================================
-1. Prerequisites                                  *gruvbox.nvim-prerequisites*
+1. Prerequisites                                  *chocolatier-prerequisites*
 
-Neovim 0.8.0+
+Neovim 0.10.0+
 
 
 ==============================================================================
-2. Installing                                        *gruvbox.nvim-installing*
+2. Installing                                        *chocolatier-installing*
 
 
-USING PACKER                            *gruvbox.nvim-installing-using-packer*
+USING PACKER                            *chocolatier-installing-using-packer*
 
 >lua
-    use { "ellisonleao/gruvbox.nvim" }
+    use { "qaptoR-nvim/chocolatier" }
 <
 
 
-USING LAZY.NVIM                      *gruvbox.nvim-installing-using-lazy.nvim*
+USING LAZY.NVIM                      *chocolatier-installing-using-lazy.nvim*
 
 >lua
-    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...}
+    { "qaptoR-nvim/chocolatier", priority = 1000 , config = true, opts = ...}
 <
 
 
-USING VIM-PLUG                        *gruvbox.nvim-installing-using-vim-plug*
+USING VIM-PLUG                        *chocolatier-installing-using-vim-plug*
 
 >vim
-    Plug 'ellisonleao/gruvbox.nvim'
+    Plug 'qaptoR-nvim/chocolatier'
 <
 
 
 ==============================================================================
-3. Basic Usage                                      *gruvbox.nvim-basic-usage*
+3. Basic Usage                                      *chocolatier-basic-usage*
 
 Inside `init.vim`
 
 >vim
     set background=dark " or light if you want light mode
-    colorscheme gruvbox
+    colorscheme chocolatier
 <
 
 Inside `init.lua`
 
 >lua
     vim.o.background = "dark" -- or "light" for light mode
-    vim.cmd([[colorscheme gruvbox]])
+    vim.cmd([[colorscheme chocolatier]])
 <
 
 
 ==============================================================================
-4. Configuration                                  *gruvbox.nvim-configuration*
+4. Configuration                                  *chocolatier-configuration*
 
-Additional settings for gruvbox are:
+Additional settings for chocolatier are:
 
 >lua
     -- Default options:
-    require("gruvbox").setup({
+    require("chocolatier").setup({
       terminal_colors = true, -- add neovim terminal colors
       undercurl = true,
       underline = true,
@@ -103,14 +98,14 @@ Additional settings for gruvbox are:
       dim_inactive = false,
       transparent_mode = false,
     })
-    vim.cmd("colorscheme gruvbox")
+    vim.cmd("colorscheme chocolatier")
 <
 
 **VERY IMPORTANT**Make sure to call setup() **BEFORE** calling the colorscheme
 command, to use your custom configs
 
 
-OVERRIDING                             *gruvbox.nvim-configuration-overriding*
+OVERRIDING                             *chocolatier-configuration-overriding*
 
 
 PALETTE ~
@@ -118,12 +113,12 @@ PALETTE ~
 You can specify your own palette colors. For example:
 
 >lua
-    require("gruvbox").setup({
+    require("choclatier").setup({
         palette_overrides = {
             bright_green = "#990000",
         }
     })
-    vim.cmd("colorscheme gruvbox")
+    vim.cmd("colorscheme chocolatier")
 <
 
 
@@ -133,24 +128,24 @@ If you don’t enjoy the current color for a specific highlight group, now you
 can just override it in the setup. For example:
 
 >lua
-    require("gruvbox").setup({
+    require("choclatier").setup({
         overrides = {
             SignColumn = {bg = "#ff9900"}
         }
     })
-    vim.cmd("colorscheme gruvbox")
+    vim.cmd("colorscheme chocolatier")
 <
 
 It also works with treesitter groups and lsp semantic highlight tokens
 
 >lua
-    require("gruvbox").setup({
+    require("choclatier").setup({
         overrides = {
             ["@lsp.type.method"] = { bg = "#ff9900" },
             ["@comment.lua"] = { bg = "#000000" },
         }
     })
-    vim.cmd("colorscheme gruvbox")
+    vim.cmd("colorscheme chocolatier")
 <
 
 Please note that the override values must follow the attributes from the
