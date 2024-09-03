@@ -1,21 +1,31 @@
+#+html:<div align="center">
+#+html:<img src="./images/logo.png" width="256" height="256" alt="Logo" />
+#+html:<span style="font-family: 'Pristina', 'Brush Script MT', cursive;"><h1>Chocolatier.nvim</h1></span>
+#+html:</div>
+
 #+begin_comment
-<div align="center">
-  <h1>
-    <img src="https://i.postimg.cc/WpQzgxVh/plugin-Icon.png" width="80px"><br/>
-    gruvbox.nvim
-  </h1>
-</div>
 <p align="center"> 
   #insert social media badges here
   <a href="#"><img alt="Made with Lua" src="https://img.shields.io/badge/Made%20with%20Lua-blueviolet.svg?style=for-the-badge&logo=lua" style="vertical-align:center" /></a>
 </p>
 #+end_comment
 
-A espresso/kimbie inspired chocolatey theme written in lua with treesitter and semantic highlights support!
+An espresso/kimbie inspired chocolatey theme written in lua with treesitter and semantic highlights support!
 
 Adapted from ~ellisonleao/gruvbox.nvim~ theme.
 
-# insert screenshots here
+#+html:<div align="center">
+[[./images/palette.png]]
+[[./images/screenshot.png]]
+#+html:</div>
+
+#+BEGIN_QUOTE *NOTES*
+Only dark mode is available for now, light mode is a wip.
+
+Only =alt_g= is in use for now, the rest will be implemented over time where applicable.
+
+All colors are subject to slight variation as this theme is still in development.
+#+END_QUOTE
 
 * Prerequisites
 
@@ -92,7 +102,8 @@ require("chocolatier").setup({
 vim.cmd("colorscheme chocolatier")
 #+end_src
 
-**VERY IMPORTANT**: Make sure to call setup() **BEFORE** calling the colorscheme command, to use your custom configs
+*VERY IMPORTANT*: Make sure to call setup() *BEFORE* calling the colorscheme command,
+to use your custom configs
 
 ** Overriding
 

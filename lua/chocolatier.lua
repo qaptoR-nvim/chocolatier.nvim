@@ -1205,14 +1205,14 @@ local function get_groups()
     ["@lsp.type.type"] = { link = "@type" },
     ["@lsp.type.typeParameter"] = { link = "@type.definition" },
     ["@lsp.type.variable"] = { link = "@variable" },
-    ["@org.headline.level1"] = { link = "FrontiersGreen" },
-    ["@org.headline.level2"] = { link = "FrontiersPurple" },
-    ["@org.headline.level3"] = { link = "FrontiersFuscia" },
-    ["@org.headline.level4"] = { link = "FrontiersBlue" },
-    ["@org.headline.level5"] = { link = "FrontiersAqua" },
-    ["@org.headline.level6"] = { link = "FrontiersRed" },
-    ["@org.headline.level7"] = { link = "FrontiersOrange" },
-    ["@org.headline.level8"] = { link = "FrontiersYellow" },
+    ["@org.headline.level1"] = { link = "ChocolatierGreen" },
+    ["@org.headline.level2"] = { link = "ChocolatierPurple" },
+    ["@org.headline.level3"] = { link = "ChocolatierFuscia" },
+    ["@org.headline.level4"] = { link = "ChocolatierBlue" },
+    ["@org.headline.level5"] = { link = "ChocolatierAqua" },
+    ["@org.headline.level6"] = { link = "ChocolatierRed" },
+    ["@org.headline.level7"] = { link = "ChocolatierOrange" },
+    ["@org.headline.level8"] = { link = "ChocolatierYellow" },
   }
 
   for group, hl in pairs(config.overrides) do
@@ -1243,7 +1243,7 @@ Chocolatier.load = function()
   if vim.g.colors_name then
     vim.cmd.hi("clear")
   end
-  vim.g.colors_name = "chocolatier-nvim"
+  vim.g.colors_name = "chocolatier"
   vim.o.termguicolors = true
 
   local groups = get_groups()
