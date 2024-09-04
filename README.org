@@ -19,13 +19,13 @@ Adapted from ~ellisonleao/gruvbox.nvim~ theme.
 [[./images/screenshot.png]]
 #+html:</div>
 
-#+BEGIN_QUOTE *NOTES*
-Only dark mode is available for now, light mode is a wip.
+#+begin_quote
+Light and Dark modes are available now. Light mode is currently a straightforward inversion of dark mode colors.
 
 Only =alt_g= is in use for now, the rest will be implemented over time where applicable.
 
 All colors are subject to slight variation as this theme is still in development.
-#+END_QUOTE
+#+end_quote
 
 * Prerequisites
 
