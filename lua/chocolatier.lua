@@ -92,15 +92,15 @@ Chocolatier.palette = {
   light4 = "#907659",
 
   -- ORANGE
-  bright_orange = "#f79a32",
-  neutral_orange = "#f79a32",
-  faded_orange = "#f79a32",
-  light_orange = "#f79a32",
-  light_orange_soft = "#f79a32",
-  light_orange_hard = "#f79a32",
-  dark_orange = "#a96920",
-  dark_orange_soft = "#a96920",
-  dark_orange_hard = "#a96920",
+  bright_orange = "#e48212",
+  neutral_orange = "#e48212",
+  faded_orange = "#e48212",
+  light_orange = "#e48212",
+  light_orange_soft = "#e48212",
+  light_orange_hard = "#e48212",
+  dark_orange = "#a95e09",
+  dark_orange_soft = "#a95e09",
+  dark_orange_hard = "#a95e09",
 
   -- RED
   bright_red = "#c33a2b",
@@ -125,15 +125,15 @@ Chocolatier.palette = {
   dark_green_hard = "#657829",
 
   -- YELLOW
-  bright_yellow = "#fbb53a",
-  neutral_yellow = "#fbb53a",
-  faded_yellow = "#fbb53a",
-  light_yellow = "#fbb53a",
-  light_yellow_soft = "#fbb53a",
-  light_yellow_hard = "#fbb53a",
-  dark_yellow = "#bb872b",
-  dark_yellow_soft = "#bb872b",
-  dark_yellow_hard = "#bb872b",
+  bright_yellow = "#f4aa2b",
+  neutral_yellow = "#f4aa2b",
+  faded_yellow = "#f4aa2b",
+  light_yellow = "#f4aa2b",
+  light_yellow_soft = "#f4aa2b",
+  light_yellow_hard = "#f4aa2b",
+  dark_yellow = "#bb8018",
+  dark_yellow_soft = "#bb8018",
+  dark_yellow_hard = "#bb8018",
 
   -- BLUE
   bright_blue = "#83a598",
