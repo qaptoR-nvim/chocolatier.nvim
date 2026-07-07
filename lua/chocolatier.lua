@@ -477,7 +477,7 @@ local function get_groups()
     PmenuThumb = { bg = colors.bg4 },
     DiffDelete = { bg = colors.dark_red },
     DiffAdd = { bg = colors.dark_green },
-    DiffChange = { bg = colors.dark_aqua },
+    DiffChange = { bg = colors.dark_aqua, fg = colors.bg0 },
     DiffText = { bg = colors.yellow, fg = colors.bg0 },
     SpellCap = { link = "ChocolatierBlueUnderline" },
     SpellBad = { link = "ChocolatierRedUnderline" },
