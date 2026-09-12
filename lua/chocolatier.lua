@@ -1231,6 +1231,14 @@ local function get_groups()
     ["@org.headline.level6"] = { link = "ChocolatierOrange" },
     ["@org.headline.level7"] = { link = "ChocolatierRed" },
     ["@org.headline.level8"] = { link = "ChocolatierFuscia" },
+    ["@fey.heading.level1"] = { link = "ChocolatierPurple" },
+    ["@fey.heading.level2"] = { link = "ChocolatierBlue" },
+    ["@fey.heading.level3"] = { link = "ChocolatierAqua" },
+    ["@fey.heading.level4"] = { link = "ChocolatierGreen" },
+    ["@fey.heading.level5"] = { link = "ChocolatierYellow" },
+    ["@fey.heading.level6"] = { link = "ChocolatierOrange" },
+    ["@fey.heading.level7"] = { link = "ChocolatierRed" },
+    ["@fey.heading.level8"] = { link = "ChocolatierFuscia" },
   }
 
   for group, hl in pairs(config.overrides) do
