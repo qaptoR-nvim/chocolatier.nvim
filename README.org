@@ -1,6 +1,6 @@
 #+html:<div align="center">
-#+html:<img src="./images/logo.png" width="256" height="256" alt="Logo" />
-#+html:<span style="font-family: 'Pristina', 'Brush Script MT', cursive;"><h1>Chocolatier.nvim</h1></span>
+#+html:  <img src="./images/logo.png" width="256" height="256" alt="Logo" />
+#+html:  <h1>Chocolatier.nvim</h1>
 #+html:</div>
 
 #+begin_comment
